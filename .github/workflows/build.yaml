@@ -1,5 +1,6 @@
 name: productservices
-
+env:
+  MAVEN: ./mvnw
 on:
   push:
   pull_request:
@@ -14,6 +15,9 @@ jobs:
   build_test_release:
     runs-on: ubuntu-latest
     steps:
+    - name: build and test
+      run: |
+        mvn clean install
     - name: "Build Docker image and push it to a Registry"
       run: |
         docker build -f Dockerfile -t sayan21/product-service .
