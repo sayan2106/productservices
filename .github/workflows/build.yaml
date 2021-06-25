@@ -36,7 +36,7 @@ jobs:
         
     - name: docker login
       run: |
-        docker login
+        docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
         
     - name: "Build Docker image and push it to a Registry"
       run: |
