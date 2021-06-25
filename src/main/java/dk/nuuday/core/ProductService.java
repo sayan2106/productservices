@@ -68,12 +68,5 @@ public class ProductService {
 		
 	}
 	
-	public static void main(String[] args) {
-		new ProductService().getAllProducts();
-		
-		logger.info("-------------------------------------------------");
-		
-		new ProductService().getProductByCode("mmetyidlug");
-	}
 	
 }

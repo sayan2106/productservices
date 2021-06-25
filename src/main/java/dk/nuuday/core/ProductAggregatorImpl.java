@@ -73,12 +73,7 @@ public class ProductAggregatorImpl {
 		for (int j = 0; j < mobileVoiceRoot.getProduct().size(); j++) {
 			productMap.put(mobileVoiceRoot.getProduct().get(j).getProductCode(), (Product) mobileVoiceRoot.getProduct().get(j));
 		}
-		
-		
-		//aggregatedProduct.addAll(mobileBroadbandRoot.getProduct());
-		//aggregatedProduct.addAll(mobileVoiceRoot.getProduct());
-		
-		//System.out.println(aggregatedProduct.size());
+
 		return productMap;
 		
 			}
