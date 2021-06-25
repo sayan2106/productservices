@@ -22,7 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<start-class>com.springbootjava.product.SpringBootProductApplication</start-class>
+		<start-class>dk.nuuday.product.SpringBootProductApplication</start-class>
 		<swagger.version>2.9.2</swagger.version>
 		<swagger-annotations.version>1.5.21</swagger-annotations.version>
 		<swagger-models.version>1.5.21</swagger-models.version>
