@@ -34,6 +34,10 @@ jobs:
       run: |
         ${MAVEN} clean install
         
+    - name: docker login
+      run: |
+        docker login
+        
     - name: "Build Docker image and push it to a Registry"
       run: |
         docker build -f Dockerfile -t sayan21/product-service .
