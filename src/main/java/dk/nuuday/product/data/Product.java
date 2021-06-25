@@ -1,3 +1,4 @@
+package dk.nuuday.product.data;
 /*package com.springbootjava.product.data;
 
 import java.net.HttpURLConnection;

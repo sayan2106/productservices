@@ -1,3 +1,4 @@
+package dk.nuuday.tester;
 /*package com.howtodoinjava.demo;
 
 import org.junit.Test;

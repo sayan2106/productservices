@@ -22,8 +22,7 @@ public class ProductService {
 	public String getAllProducts() {
 		
 		Map<String, Product> productMap = Collections.synchronizedMap(new HashMap<>());
-		
-		List<SimplifiedProduct> productList = new ArrayList<SimplifiedProduct>();
+
 		List<SimplifiedProduct> simplifiedProductList = new ArrayList<SimplifiedProduct>();
 		SimplifiedProduct simplifiedProduct;
 		
@@ -43,7 +42,7 @@ public class ProductService {
 		Gson gson = builder.create();
 		String jsonString = gson.toJson(simplifiedProductList);
 		
-		logger.debug(jsonString);
+		//logger.debug(jsonString);
 		return jsonString;
 		
 		
@@ -64,7 +63,7 @@ public class ProductService {
 		String jsonString = gson.toJson(productMap.get(productCode));
 		
 		logger.debug(jsonString);
-		logger.debug("--"+new Date());
+		logger.info("------++++ inside get product by code ++++-------------"+new Date());
 		return productMap.get(productCode);
 		
 	}

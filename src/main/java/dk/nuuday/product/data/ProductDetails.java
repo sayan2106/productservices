@@ -1,4 +1,4 @@
-package com.springbootjava.product.data;
+package dk.nuuday.product.data;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Scanner;

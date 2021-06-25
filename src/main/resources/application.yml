@@ -3,4 +3,4 @@ swagger:
     description: Service for Products
     
 server:
-  port: 8083
+  port: 8084
