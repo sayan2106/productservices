@@ -1,8 +1,8 @@
-package dk.nuuday.dto;
+package dk.nuuday.product.dto;
 
 import java.util.List;
 
-public class Product {
+public class AdditionalProduct {
 	public String getProductCode() {
 		return productCode;
 	}

@@ -1,4 +1,4 @@
-package dk.nuuday.core;
+package dk.nuuday.product.core;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -13,8 +13,8 @@ import org.apache.logging.log4j.Logger;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import dk.nuuday.dto.Product;
-import dk.nuuday.dto.SimplifiedProduct;
+import dk.nuuday.product.dto.Product;
+import dk.nuuday.product.dto.SimplifiedProduct;
 
 public class ProductService {
 	
@@ -36,6 +36,7 @@ public class ProductService {
 			simplifiedProductList.add(simplifiedProduct);
 		}
             
+		
 		
 		GsonBuilder builder = new GsonBuilder();
 		builder.setPrettyPrinting();
