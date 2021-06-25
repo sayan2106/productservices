@@ -1,4 +1,4 @@
-package dk.nuuday.exceptions;
+package dk.nuuday.product.exceptionhandling;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
  

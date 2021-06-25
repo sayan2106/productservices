@@ -1,4 +1,4 @@
-package dk.nuuday.core;
+package dk.nuuday.product.core;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -13,8 +13,8 @@ import java.util.Map;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import dk.nuuday.dto.Product;
-import dk.nuuday.dto.Root;
+import dk.nuuday.product.dto.Product;
+import dk.nuuday.product.dto.Root;
 
 public class ProductAggregatorImpl {
 	

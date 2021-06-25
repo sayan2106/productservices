@@ -1,4 +1,4 @@
-package dk.nuuday.dto;
+package dk.nuuday.product.dto;
 
 import java.util.List;
 
