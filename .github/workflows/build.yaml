@@ -15,9 +15,25 @@ jobs:
   build_test_release:
     runs-on: ubuntu-latest
     steps:
+    - name: "Git: Checkout master with full history"
+      uses: actions/checkout@master
+      with:
+        fetch-depth: 0
+
+    - uses: actions/cache@v1
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
+
+    - name: initialize
+      run: mvn -N io.takari:maven:wrapper
+
     - name: build and test
       run: |
-        mvn clean install
+        ${MAVEN} clean install
+        
     - name: "Build Docker image and push it to a Registry"
       run: |
         docker build -f Dockerfile -t sayan21/product-service .
