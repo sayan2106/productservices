@@ -24,5 +24,4 @@ public class ErrorResponse
 		this.details = details;
 	}
  
-    //getters and setters
 }
