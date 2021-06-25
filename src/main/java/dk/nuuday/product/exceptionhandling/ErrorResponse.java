@@ -1,5 +1,6 @@
 package dk.nuuday.product.exceptionhandling;
 import java.util.List;
+
 import javax.xml.bind.annotation.XmlRootElement;
  
 @XmlRootElement(name = "error")
